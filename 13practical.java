@@ -1,22 +1,12 @@
+// Code is stored as 13template.java
 import java.lang.Math.*;   import java.io.*;   import java.text.*;
 
 public class timeMethods{
-    public static int linearSearch(int[] arr, int target){
 
-        for (int i = 0; i < 32654; i++){
-            if (arr[i] == target){
-                return 1;
-            }
-        }
-        return -1;
-      // Added code for linear search
+    
+      
 
-    }
-    public static int binarySearch(int[] arr, int target){
-        
-    }
-        
-        
+
     public static void main(String args[]){
 
         DecimalFormat twoD = new DecimalFormat("0.00");
@@ -34,8 +24,13 @@ public class timeMethods{
             start = System.currentTimeMillis();
 
             // call the procedures to time here:
-            linearsearch (...);
-            binarysearch (...);
+            // Linear Search
+            
+
+            }
+            public static int BinarySearch(int[] arr, int target){
+                
+            }
             // Figure out how to alter this guideline here,
 
             finish = System.currentTimeMillis();
@@ -64,8 +59,35 @@ public class timeMethods{
         System.out.println();
         System.out.println(); }	}
 
-    static void oneofyourMethods(int n,
-                                 yourMethodParameter1,
-                                 yourMethodParameter2, . . . ) {
-// The declarations and body of your method / s
-// The final statement of this code.} }
+    static void loadFile((int n,
+ 
+    
+    public static int linearSearch(int[] arr, int target){
+
+        for(int i=0;i< 32654;i++){
+        if(arr[i]==target){
+        return 1;
+        }
+        return -1;
+        }
+        
+
+    public static int binarySearch(int key){
+            int left = 0;
+            int right = array.length-1;
+            while (left <= right) {
+                int mid = (low+high)/2;
+                
+                if (array[mid].key == key]){
+                  return mid;
+                } else of (key < array[mid].key) {
+                  high = mid-1
+                } else {
+                  low = mid+1;
+                }
+                return -1;
+        }
+        }
+        }
+
+        
