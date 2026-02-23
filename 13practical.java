@@ -1,4 +1,3 @@
-// Code is stored as 13template.java
 import java.lang.Math.*;   import java.io.*;   import java.text.*;
 
 public class timeMethods{
@@ -21,16 +20,12 @@ public class timeMethods{
 
         runTime = 0;
         for(repetition = 0; repetition < repetitions; repetition++) {
-            start = System.currentTimeMillis();
+            int start = System.currentTimeMillis();
 
             // call the procedures to time here:
             // Linear Search
+           
             
-
-            }
-            public static int BinarySearch(int[] arr, int target){
-                
-            }
             // Figure out how to alter this guideline here,
 
             finish = System.currentTimeMillis();
@@ -59,7 +54,23 @@ public class timeMethods{
         System.out.println();
         System.out.println(); }	}
 
-    static void loadFile((int n,
+    static void loadFile() trows Exception{
+      BufferedReader br = new BufferedReader(new FileReader());
+      String line;
+      int i = 0;
+      while ((line=br.readLine())!=null){
+        String parts[] = line.split("",2);
+        
+        int.key = integer.parseInt(parts[0]);
+        
+        String data = parts[1];
+        
+        array[i] = new Node(key,data);
+        
+        i++;
+      }
+      br.close();
+    }
  
     
     public static int linearSearch(int[] arr, int target){
