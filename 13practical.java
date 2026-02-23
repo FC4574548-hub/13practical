@@ -1,3 +1,5 @@
+import java.lang.Math.*;   import java.io.*;   import java.text.*; import java.util.Random;
+
 class Node{
   int key;
   String data;
@@ -9,7 +11,7 @@ class Node{
 }
 
 public class timeMethods{
-  public static int = 32654;
+  public static int N = 32654;
   static Node array[] = new Node[N];
 
     
@@ -28,7 +30,7 @@ public class timeMethods{
         int n = N;
         int repetition, repetitions = 30;
         
-        Random random + new Random();
+        Random random = new Random();
         
         loadFile();
         
@@ -39,12 +41,12 @@ public class timeMethods{
 
         runTime = 0;
         for(repetition = 0; repetition < repetitions; repetition++) {
-            int start = System.currentTimeMillis();
+            start = System.currentTimeMillis();
 
             // call the procedures to time here:
             // Linear Search
             for (int i= 0; i < 30; i++){
-              linearSearch(keys{i}):
+              linearSearch(keys[i]);
             }
 
             finish = System.currentTimeMillis();
@@ -59,10 +61,10 @@ public class timeMethods{
                 
              // Binary Search
         for(repetition = 0; repetition < repetitions; repetition++) {
-            int start = System.currentTimeMillis();
+            start = System.currentTimeMillis();
             
             for (int i= 0; i < 30; i++){
-              binarySearch(keys{i}):
+              binarySearch(keys[i]);
             }
 
             finish = System.currentTimeMillis();
@@ -92,14 +94,14 @@ public class timeMethods{
         System.out.println();
         System.out.println(); }	}
 
-    static void loadFile() trows Exception{
+    static void loadFile() throws Exception{
       BufferedReader br = new BufferedReader(new FileReader(ulysses.numbered));
       String line;
       int i = 0;
       while ((line=br.readLine())!=null){
         String parts[] = line.split("",2);
         
-        int.key = integer.parseInt(parts[0]);
+        int key = integer.parseInt(parts[0]);
         
         String data = parts[1];
         
@@ -111,14 +113,15 @@ public class timeMethods{
     }
  
     
-    public static int linearSearch(int[] arr, int target){
+    public static int linearSearch(int key){
 
-        for(int i=0;i< 32654;i++){
-        if(arr[i]==target){
+        for(int i=0;i< array.length;i++){
+        if(arr[i].key == key){
         return 1;
         }
         return -1;
         }
+    }
         
 
     public static int binarySearch(int key){
@@ -127,14 +130,17 @@ public class timeMethods{
             while (left <= right) {
                 int mid = (low+high)/2;
                 
-                if (array[mid].key == key]){
+                if (array[mid].key == key){
                   return mid;
-                } else of (key < array[mid].key) {
-                  high = mid-1
+                } else if (key < array[mid].key) {
+                  high = mid-1;
                 } else {
                   low = mid+1;
                 }
                 return -1;
         }
-        }}
+        }
+        }
+        
+
         
