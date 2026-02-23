@@ -93,7 +93,7 @@ public class timeMethods{
         System.out.println(); }	}
 
     static void loadFile() trows Exception{
-      BufferedReader br = new BufferedReader(new FileReader());
+      BufferedReader br = new BufferedReader(new FileReader(ulysses.numbered));
       String line;
       int i = 0;
       while ((line=br.readLine())!=null){
@@ -136,5 +136,5 @@ public class timeMethods{
                 }
                 return -1;
         }
-        }
-        }
+        }}
+        
