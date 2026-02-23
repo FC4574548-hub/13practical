@@ -1,4 +1,4 @@
-import java.lang.Math.*;   import java.io.*;   import java.text.*;
+import java.lang.Math.*;   import java.io.*;   import java.text.*; import java.util.Random;
 
 public class timeMethods{
 
@@ -24,9 +24,9 @@ public class timeMethods{
 
             // call the procedures to time here:
             // Linear Search
-           
-            
-            // Figure out how to alter this guideline here,
+            for (int i= 0; i < 30; i++){
+              linearSearch(keys{i}):
+            }
 
             finish = System.currentTimeMillis();
 
@@ -37,6 +37,25 @@ public class timeMethods{
         double aveRuntime = runTime/repetitions;
         double stdDeviation =
                 Math.sqrt(runTime2 - repetitions*aveRuntime*aveRuntime)/(repetitions-1);
+                
+             // Binary Search
+        for(repetition = 0; repetition < repetitions; repetition++) {
+            int start = System.currentTimeMillis();
+            
+            for (int i= 0; i < 30; i++){
+              binarySearch(keys{i}):
+            }
+
+            finish = System.currentTimeMillis();
+
+            time = (double)(finish - start);
+            runTime += time;
+            runTime2 += (time*time); }
+
+        double aveRuntime = runTime/repetitions;
+        double stdDeviation =
+                Math.sqrt(runTime2 - repetitions*aveRuntime*aveRuntime)/(repetitions-1);
+             
 
         System.out.printf("\n\n\fStatistics\n");
         System.out.println("________________________________________________");
