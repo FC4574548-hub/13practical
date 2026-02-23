@@ -1,12 +1,22 @@
-import java.lang.Math.*;   import java.io.*;   import java.text.*; import java.util.Random;
+class Node{
+  int key;
+  String data;
+  
+  Node(int k, String d){
+    key = k;
+    data = d;
+  }
+}
 
 public class timeMethods{
+  public static int = 32654;
+  static Node array[] = new Node[N];
 
     
       
 
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws Exception{
 
         DecimalFormat twoD = new DecimalFormat("0.00");
         DecimalFormat fourD = new DecimalFormat("0.0000");
@@ -17,6 +27,15 @@ public class timeMethods{
         double totalTime = 0.0;
         int n = N;
         int repetition, repetitions = 30;
+        
+        Random random + new Random();
+        
+        loadFile();
+        
+        int[] keys = new int[30];
+        for (int i = 0; i < 30; i++){
+          keys[i] = random.nextInt(32654) + 1;
+        }
 
         runTime = 0;
         for(repetition = 0; repetition < repetitions; repetition++) {
@@ -119,5 +138,3 @@ public class timeMethods{
         }
         }
         }
-
-        
